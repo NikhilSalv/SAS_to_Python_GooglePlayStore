@@ -8,9 +8,14 @@ This project analyzes a dataset containing information about various mobile apps
 ## Observations
 
 #### Summary Statistics
-
+##### - SAS code output
 
 <img width="661" alt="Screenshot 2024-05-02 at 00 24 57" src="https://github.com/NikhilSalv/SAS_to_Python_GooglePlayStore/assets/74225565/ba1f69bc-f64a-4428-bea9-2a2b318d3905">
+
+##### - Python code output
+
+![Screenshot 2024-05-02 at 00 28 06](https://github.com/NikhilSalv/SAS_to_Python_GooglePlayStore/assets/74225565/704bd7d8-9c73-4034-ac9c-c35615262b44)
+
 
 
 The dataset comprises 10841 entries with 13 columns. There are no missing values in any of the columns.
