@@ -1,0 +1,2197 @@
+<!DOCTYPE html>
+<!-- saved from url=(0106)https://odamid-euw1.oda.sas.com/SASStudio/sasexec/submissions/3a642ff8-7856-49f9-b65a-a2a3841adec8/results -->
+<html class="ods_3a642ff8-7856-49f9-b65a-a2a3841adec8" lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta content="SAS 9.4" name="generator">
+<title>Results: GooglePlaystore.sas</title>
+<style>
+/*<![CDATA[*/
+.ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .body.c section > table, .ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .body.c section > pre, .ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .body.c div > table,
+.ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .body.c div > pre, .ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .body.c article > table, .ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .body.c article > pre,
+.ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .body.j section > table, .ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .body.j section > pre, .ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .body.j div > table,
+.ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .body.j div > pre, .ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .body.j article > table, .ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .body.j article > pre,
+.ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .body.c p.note, .ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .body.c p.warning, .ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .body.c p.error, .ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .body.c p.fatal,
+.ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .body.j p.note, .ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .body.j p.warning, .ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .body.j p.error, .ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .body.j p.fatal,
+.ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .body.c > table.layoutcontainer, .ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .body.j > table.layoutcontainer { margin-left: auto; margin-right: auto }
+.ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .layoutregion.l table, .ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .layoutregion.l pre, .ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .layoutregion.l p.note,
+.ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .layoutregion.l p.warning, .ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .layoutregion.l p.error, .ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .layoutregion.l p.fatal { margin-left: 0 }
+.ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .layoutregion.c table, .ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .layoutregion.c pre, .ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .layoutregion.c p.note,
+.ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .layoutregion.c p.warning, .ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .layoutregion.c p.error, .ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .layoutregion.c p.fatal { margin-left: auto; margin-right: auto }
+.ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .layoutregion.r table, .ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .layoutregion.r pre, .ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .layoutregion.r p.note,
+.ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .layoutregion.r table, .ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .layoutregion.r pre, .ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .layoutregion.r p.note,
+.ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .layoutregion.r p.warning, .ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .layoutregion.r p.error, .ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .layoutregion.r p.fatal { margin-right: 0 }
+.ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 article, .ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 aside, .ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 details, .ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 figcaption, .ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 figure, .ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 footer, .ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 header, .ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 hgroup, .ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 nav, .ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 section { display: block }
+html.ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 { font-size: 100% }
+.ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .body { margin: 1em; font-size: 13px; line-height: 1.231 }
+.ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 sup { position: relative; vertical-align: baseline; bottom: 0.25em; font-size: 0.8em }
+.ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 sub { position: relative; vertical-align: baseline; top: 0.25em; font-size: 0.8em }
+.ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 ul, .ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 ol { margin: 1em 0; padding: 0 0 0 40px }
+.ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 dd { margin: 0 0 0 40px }
+.ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 nav ul, .ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 nav ol { list-style: none; list-style-image: none; margin: 0; padding: 0 }
+.ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 img { border: 0; vertical-align: middle }
+.ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 svg:not(:root) { overflow: hidden }
+.ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 figure { margin: 0 }
+.ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 table { border-collapse: collapse; border-spacing: 0 }
+.ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .layoutcontainer { border-collapse: separate; border-spacing: 0 }
+.ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 p { margin-top: 0; text-align: left }
+.ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 h1.heading1 { text-align: left }
+.ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 h2.heading2 { text-align: left }
+.ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 h3.heading3 { text-align: left }
+.ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 h4.heading4 { text-align: left }
+.ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 h5.heading5 { text-align: left }
+.ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 h6.heading6 { text-align: left }
+.ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 span { text-align: left }
+.ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 table { margin-bottom: 1em }
+.ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 td, .ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 th { text-align: left; padding: 3px 6px; vertical-align: top }
+.ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 td[class$="fixed"], .ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 th[class$="fixed"] { white-space: pre }
+.ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 section, .ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 article { padding-top: 1px; padding-bottom: 8px }
+.ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 hr.pagebreak { height: 0px; border: 0; border-bottom: 1px solid #c0c0c0; margin: 1em 0 }
+.ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .stacked-value { text-align: left; display: block }
+.ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .stacked-cell > .stacked-value, .ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 td.data > td.data, .ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 th.data > td.data, .ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 th.data > th.data, .ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 td.data > th.data, .ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 th.header > th.header { border: 0 }
+.ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .stacked-cell > div.data { border-width: 0 }
+.ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .systitleandfootercontainer { white-space: nowrap; margin-bottom: 1em }
+.ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .systitleandfootercontainer > p { margin: 0 }
+.ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .systitleandfootercontainer > p > span { display: inline-block; width: 100%; white-space: normal }
+.ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .batch { display: table }
+.ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .toc { display: none }
+.ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .proc_note_group, .ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .proc_title_group { margin-bottom: 1em }
+.ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 p.proctitle { margin: 0 }
+.ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 p.note, .ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 p.warning, .ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 p.error, .ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 p.fatal { display: table }
+.ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .notebanner, .ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .warnbanner, .ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .errorbanner, .ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .fatalbanner,
+.ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .notecontent, .ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .warncontent, .ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .errorcontent, .ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .fatalcontent { display: table-cell; padding: 0.5em }
+.ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .notebanner, .ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .warnbanner, .ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .errorbanner, .ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .fatalbanner { padding-right: 0 }
+.ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .body > div > ol li { text-align: left }
+.ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .beforecaption > h4 { margin-top: 0; margin-bottom: 0 }
+.ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .c { text-align: center }
+.ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .r { text-align: right }
+.ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .l { text-align: left }
+.ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .j { text-align: justify }
+.ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .d { text-align: right }
+.ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .b { vertical-align: bottom }
+.ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .m { vertical-align: middle }
+.ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .t { vertical-align: top }
+.ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .accessiblecaption {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 a:active { color: #800080 }
+.ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .aftercaption {
+    background-color: #fafbfe;
+    border-spacing: 0;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+    padding-top: 4pt;
+}
+.ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .batch > colgroup {
+    border-left: 1px solid #c1c1c1;
+    border-right: 1px solid #c1c1c1;
+}
+.ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .batch > tbody, .ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .batch > thead, .ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .batch > tfoot {
+    border-top: 1px solid #c1c1c1;
+    border-bottom: 1px solid #c1c1c1;
+}
+.ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .batch { border: hidden; }
+.ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .batch {
+    background-color: #fafbfe;
+    border: 1px solid #c1c1c1;
+    border-collapse: separate;
+    border-spacing: 1px;
+    color: #000000;
+    font-family: 'SAS Monospace', 'Courier New', Courier, monospace;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    padding: 7px;
+    }
+.ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .beforecaption {
+    background-color: #fafbfe;
+    border-spacing: 0;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .body {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+.ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .bodydate {
+    background-color: #fafbfe;
+    border-spacing: 0;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    text-align: right;
+    vertical-align: top;
+    width: 100%;
+}
+.ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .bycontentfolder {
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    list-style-type: none;
+    margin-left: 6pt;
+}
+.ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .byline {
+    background-color: #fafbfe;
+    border-spacing: 0;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .bylinecontainer > col, .ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .bylinecontainer > colgroup > col, .ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .bylinecontainer > colgroup, .ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .bylinecontainer > tr, .ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .bylinecontainer > * > tr, .ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .bylinecontainer > thead, .ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .bylinecontainer > tbody, .ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .bylinecontainer > tfoot { border: none; }
+.ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .bylinecontainer {
+    background-color: #fafbfe;
+    border: none;
+    border-spacing: 1px;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    width: 100%;
+}
+.ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .caption {
+    background-color: #fafbfe;
+    border-spacing: 0;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .cell, .ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .container {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .contentfolder, .ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .contentitem {
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    list-style-type: none;
+    margin-left: 6pt;
+}
+.ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .contentproclabel, .ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .contentprocname {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .contents {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    list-style-type: decimal;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+.ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .contentsdate {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    width: 100%;
+}
+.ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .contenttitle {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: italic;
+    font-weight: bold;
+}
+.ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .continued {
+    background-color: #fafbfe;
+    border-spacing: 0;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+    width: 100%;
+}
+.ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .data, .ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .dataemphasis {
+    background-color: #ffffff;
+    border-color: #c1c1c1;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .dataemphasisfixed {
+    background-color: #ffffff;
+    border-color: #c1c1c1;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: x-small;
+    font-style: italic;
+    font-weight: normal;
+}
+.ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .dataempty {
+    background-color: #ffffff;
+    border-color: #c1c1c1;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .datafixed {
+    background-color: #ffffff;
+    border-color: #c1c1c1;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    font-family: 'Courier New', Courier;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .datastrong {
+    background-color: #ffffff;
+    border-color: #c1c1c1;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .datastrongfixed {
+    background-color: #ffffff;
+    border-color: #c1c1c1;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #000000;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .date {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    width: 100%;
+}
+.ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .document {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .errorbanner {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .errorcontent {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .errorcontentfixed {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: 'Courier New', Courier;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .extendedpage {
+    background-color: #fafbfe;
+    border-style: solid;
+    border-width: 1pt;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: italic;
+    font-weight: normal;
+    text-align: center;
+}
+.ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .fatalbanner {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .fatalcontent {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .fatalcontentfixed {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: 'Courier New', Courier;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .folderaction {
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    list-style-type: none;
+    margin-left: 6pt;
+}
+.ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .footer {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .footeremphasis {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: italic;
+    font-weight: normal;
+}
+.ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .footeremphasisfixed {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: x-small;
+    font-style: italic;
+    font-weight: normal;
+}
+.ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .footerempty {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .footerfixed {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: 'Courier New', Courier;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .footerstrong {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .footerstrongfixed {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .frame {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .graph > colgroup {
+    border-left: 1px solid #c1c1c1;
+    border-right: 1px solid #c1c1c1;
+}
+.ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .graph > tbody, .ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .graph > thead, .ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .graph > tfoot {
+    border-top: 1px solid #c1c1c1;
+    border-bottom: 1px solid #c1c1c1;
+}
+.ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .graph { border: hidden; }
+.ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .graph {
+    background-color: #fafbfe;
+    border: 1px solid #c1c1c1;
+    border-collapse: separate;
+    border-spacing: 1px;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    }
+.ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .header {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .headeremphasis {
+    background-color: #d8dbd3;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: italic;
+    font-weight: normal;
+}
+.ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .headeremphasisfixed {
+    background-color: #d8dbd3;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #000000;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: x-small;
+    font-style: italic;
+    font-weight: normal;
+}
+.ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .headerempty {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .headerfixed {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: 'Courier New', Courier;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .headersandfooters {
+    background-color: #edf2f9;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .headerstrong {
+    background-color: #d8dbd3;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .headerstrongfixed {
+    background-color: #d8dbd3;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #000000;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .heading1, .ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .heading2, .ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .heading3, .ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .heading4, .ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .heading5, .ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .heading6 { font-family: Arial, Helvetica, sans-serif }
+.ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .index {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .indexaction, .ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .indexitem {
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    list-style-type: none;
+    margin-left: 6pt;
+}
+.ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .indexprocname {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .indextitle {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: italic;
+    font-weight: bold;
+}
+.ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .layoutcontainer, .ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .layoutregion {
+    border-width: 0;
+    border-spacing: 30px;
+}
+.ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .linecontent {
+    background-color: #fafbfe;
+    border-color: #c1c1c1;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 a:link { color: #0000ff }
+.ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .list {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    list-style-type: disc;
+}
+.ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .list10 {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    list-style-type: square;
+}
+.ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .list2 {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    list-style-type: circle;
+}
+.ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .list3, .ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .list4, .ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .list5, .ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .list6, .ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .list7, .ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .list8, .ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .list9 {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    list-style-type: square;
+}
+.ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .listitem {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    list-style-type: disc;
+}
+.ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .listitem10 {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    list-style-type: square;
+}
+.ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .listitem2 {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    list-style-type: circle;
+}
+.ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .listitem3, .ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .listitem4, .ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .listitem5, .ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .listitem6, .ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .listitem7, .ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .listitem8, .ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .listitem9 {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    list-style-type: square;
+}
+.ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .note {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .notebanner {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .notecontent {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .notecontentfixed {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: 'Courier New', Courier;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .output > colgroup {
+    border-left: 1px solid #c1c1c1;
+    border-right: 1px solid #c1c1c1;
+}
+.ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .output > tbody, .ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .output > thead, .ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .output > tfoot {
+    border-top: 1px solid #c1c1c1;
+    border-bottom: 1px solid #c1c1c1;
+}
+.ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .output { border: hidden; }
+.ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .output {
+    background-color: #fafbfe;
+    border: 1px solid #c1c1c1;
+    border-collapse: separate;
+    border-spacing: 1px;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    }
+.ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .pageno {
+    background-color: #fafbfe;
+    border-spacing: 0;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+    text-align: right;
+    vertical-align: top;
+}
+.ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .pages {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    list-style-type: decimal;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+.ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .pagesdate {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    width: 100%;
+}
+.ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .pagesitem {
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    list-style-type: none;
+    margin-left: 6pt;
+}
+.ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .pagesproclabel, .ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .pagesprocname {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .pagestitle {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: italic;
+    font-weight: bold;
+}
+.ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .paragraph {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .parskip > col, .ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .parskip > colgroup > col, .ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .parskip > colgroup, .ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .parskip > tr, .ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .parskip > * > tr, .ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .parskip > thead, .ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .parskip > tbody, .ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .parskip > tfoot { border: none; }
+.ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .parskip {
+    border: none;
+    border-spacing: 0;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+    }
+.ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .prepage {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    text-align: left;
+}
+.ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .proctitle {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .proctitlefixed {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .rowfooter {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .rowfooteremphasis {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: italic;
+    font-weight: normal;
+}
+.ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .rowfooteremphasisfixed {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: x-small;
+    font-style: italic;
+    font-weight: normal;
+}
+.ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .rowfooterempty {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .rowfooterfixed {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: 'Courier New', Courier;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .rowfooterstrong {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .rowfooterstrongfixed {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .rowheader {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .rowheaderemphasis {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: italic;
+    font-weight: normal;
+}
+.ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .rowheaderemphasisfixed {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: x-small;
+    font-style: italic;
+    font-weight: normal;
+}
+.ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .rowheaderempty {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .rowheaderfixed {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: 'Courier New', Courier;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .rowheaderstrong {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .rowheaderstrongfixed {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .systemfooter, .ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .systemfooter10, .ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .systemfooter2, .ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .systemfooter3, .ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .systemfooter4, .ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .systemfooter5, .ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .systemfooter6, .ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .systemfooter7, .ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .systemfooter8, .ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .systemfooter9 {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .systemtitle, .ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .systemtitle10, .ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .systemtitle2, .ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .systemtitle3, .ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .systemtitle4, .ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .systemtitle5, .ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .systemtitle6, .ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .systemtitle7, .ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .systemtitle8, .ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .systemtitle9 {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .systitleandfootercontainer > col, .ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .systitleandfootercontainer > colgroup > col, .ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .systitleandfootercontainer > colgroup, .ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .systitleandfootercontainer > tr, .ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .systitleandfootercontainer > * > tr, .ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .systitleandfootercontainer > thead, .ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .systitleandfootercontainer > tbody, .ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .systitleandfootercontainer > tfoot { border: none; }
+.ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .systitleandfootercontainer {
+    background-color: #fafbfe;
+    border: none;
+    border-spacing: 1px;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    width: 100%;
+}
+.ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .table > col, .ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .table > colgroup > col {
+    border-left: 1px solid #c1c1c1;
+    border-right: 0 solid #c1c1c1;
+}
+.ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .table > tr, .ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .table > * > tr {
+    border-top: 1px solid #c1c1c1;
+    border-bottom: 0 solid #c1c1c1;
+}
+.ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .table { border: hidden; }
+.ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .table {
+    border-color: #c1c1c1;
+    border-style: solid;
+    border-width: 1px 0 0 1px;
+    border-collapse: collapse;
+    border-spacing: 0;
+    }
+.ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .titleandnotecontainer > col, .ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .titleandnotecontainer > colgroup > col, .ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .titleandnotecontainer > colgroup, .ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .titleandnotecontainer > tr, .ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .titleandnotecontainer > * > tr, .ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .titleandnotecontainer > thead, .ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .titleandnotecontainer > tbody, .ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .titleandnotecontainer > tfoot { border: none; }
+.ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .titleandnotecontainer {
+    background-color: #fafbfe;
+    border: none;
+    border-spacing: 1px;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    width: 100%;
+}
+.ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .titlesandfooters {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .usertext {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 a:visited { color: #800080 }
+.ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .warnbanner {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .warncontent {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_3a642ff8-7856-49f9-b65a-a2a3841adec8 .warncontentfixed {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: 'Courier New', Courier;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+/*]]>*/
+</style>
+<style>
+    @font-face {
+      font-family: 'Didact Gothic';
+      src:
+          url(chrome-extension://ignghjdjmgleolgiaifohmdlnbjklkij/assets/fonts/didactgothic.woff2) format('woff2');
+  
+      font-weight: normal;
+      font-style: normal;
+  }
+  </style></head>
+<body class="body">
+<div id="div_3a642ff8-7856-49f9-b65a-a2a3841adec8" class="c body">
+<h1 class="body toc">Results: GooglePlaystore.sas</h1>
+<section data-name="Print" data-sec-type="proc">
+<h1 class="contentprocname toc">The Print Procedure</h1>
+<article id="IDX" aria-label="Data Set WORK.DF">
+<h1 class="contentitem toc">Data Set WORK.DF</h1>
+<table class="table" style="border-spacing: 0" aria-label="Data Set WORK.DF">
+<caption aria-label="Data Set WORK.DF"></caption>
+<colgroup><col></colgroup><colgroup><col><col><col><col><col><col><col><col><col><col><col><col><col></colgroup>
+<thead>
+<tr>
+<th class="r header" scope="col">Obs</th>
+<th class="header" scope="col">App</th>
+<th class="header" scope="col">Category</th>
+<th class="r header" scope="col">Rating</th>
+<th class="r header" scope="col">Reviews</th>
+<th class="header" scope="col">Size</th>
+<th class="header" scope="col">Installs</th>
+<th class="header" scope="col">Type</th>
+<th class="r header" scope="col">Price</th>
+<th class="header" scope="col">Content Rating</th>
+<th class="header" scope="col">Genres</th>
+<th class="r header" scope="col">Last Updated</th>
+<th class="header" scope="col">Current Ver</th>
+<th class="header" scope="col">Android Ver</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="r rowheader" scope="row">1</th>
+<td class="data">Photo Editor &amp; Candy Camera &amp; Grid &amp; ScrapBook</td>
+<td class="data">ART_AND_DESIGN</td>
+<td class="r data">4.1</td>
+<td class="r data">159</td>
+<td class="data">19M</td>
+<td class="data">10,000+</td>
+<td class="data">Free</td>
+<td class="r data">0</td>
+<td class="data">Everyone</td>
+<td class="data">Art &amp; Design</td>
+<td class="r data">07JAN18:00:00:00</td>
+<td class="data">1.0.0</td>
+<td class="data">4.0.3 and up</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">2</th>
+<td class="data">Coloring book moana</td>
+<td class="data">ART_AND_DESIGN</td>
+<td class="r data">3.9</td>
+<td class="r data">967</td>
+<td class="data">14M</td>
+<td class="data">500,000+</td>
+<td class="data">Free</td>
+<td class="r data">0</td>
+<td class="data">Everyone</td>
+<td class="data">Art &amp; Design;Pretend Play</td>
+<td class="r data">15JAN18:00:00:00</td>
+<td class="data">2.0.0</td>
+<td class="data">4.0.3 and up</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">3</th>
+<td class="data">U Launcher Lite – FREE Live Cool Themes, Hide Apps</td>
+<td class="data">ART_AND_DESIGN</td>
+<td class="r data">4.7</td>
+<td class="r data">87510</td>
+<td class="data">8.7M</td>
+<td class="data">5,000,000+</td>
+<td class="data">Free</td>
+<td class="r data">0</td>
+<td class="data">Everyone</td>
+<td class="data">Art &amp; Design</td>
+<td class="r data">01AUG18:00:00:00</td>
+<td class="data">1.2.4</td>
+<td class="data">4.0.3 and up</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">4</th>
+<td class="data">Sketch - Draw &amp; Paint</td>
+<td class="data">ART_AND_DESIGN</td>
+<td class="r data">4.5</td>
+<td class="r data">215644</td>
+<td class="data">25M</td>
+<td class="data">50,000,000+</td>
+<td class="data">Free</td>
+<td class="r data">0</td>
+<td class="data">Teen</td>
+<td class="data">Art &amp; Design</td>
+<td class="r data">08JUN18:00:00:00</td>
+<td class="data">Varies with device</td>
+<td class="data">4.2 and up</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">5</th>
+<td class="data">Pixel Draw - Number Art Coloring Book</td>
+<td class="data">ART_AND_DESIGN</td>
+<td class="r data">4.3</td>
+<td class="r data">967</td>
+<td class="data">2.8M</td>
+<td class="data">100,000+</td>
+<td class="data">Free</td>
+<td class="r data">0</td>
+<td class="data">Everyone</td>
+<td class="data">Art &amp; Design;Creativity</td>
+<td class="r data">20JUN18:00:00:00</td>
+<td class="data">1.1</td>
+<td class="data">4.4 and up</td>
+</tr>
+</tbody>
+</table>
+</article>
+</section>
+<section data-name="Contents" data-sec-type="proc">
+<hr class="pagebreak">
+<div id="IDX1" class="proc_title_group">
+<p class="c proctitle">The CONTENTS Procedure</p>
+</div>
+<h1 class="contentprocname toc">The Contents Procedure</h1>
+<section>
+<h1 class="contentfolder toc">WORK.DF</h1>
+<article aria-label="Attributes">
+<h1 class="contentitem toc">Attributes</h1>
+<table class="table" style="border-spacing: 0" aria-label="Attributes">
+<caption aria-label="Attributes"></caption>
+<colgroup><col><col><col><col></colgroup>
+<tbody>
+<tr>
+<th class="rowheader" scope="row">Data Set Name</th>
+<td class="data">WORK.DF</td>
+<th class="rowheader" scope="row">Observations</th>
+<td class="data">10841</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Member Type</th>
+<td class="data">DATA</td>
+<th class="rowheader" scope="row">Variables</th>
+<td class="data">13</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Engine</th>
+<td class="data">V9</td>
+<th class="rowheader" scope="row">Indexes</th>
+<td class="data">0</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Created</th>
+<td class="data">01/05/2024 23:40:57</td>
+<th class="rowheader" scope="row">Observation Length</th>
+<td class="data">184</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Last Modified</th>
+<td class="data">01/05/2024 23:40:57</td>
+<th class="rowheader" scope="row">Deleted Observations</th>
+<td class="data">0</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Protection</th>
+<td class="data">&nbsp;</td>
+<th class="rowheader" scope="row">Compressed</th>
+<td class="data">NO</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Data Set Type</th>
+<td class="data">&nbsp;</td>
+<th class="rowheader" scope="row">Sorted</th>
+<td class="data">NO</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Label</th>
+<td class="data">&nbsp;</td>
+<th class="rowheader" scope="row">&nbsp;</th>
+<td class="data">&nbsp;</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Data Representation</th>
+<td class="data">SOLARIS_X86_64, LINUX_X86_64, ALPHA_TRU64, LINUX_IA64</td>
+<th class="rowheader" scope="row">&nbsp;</th>
+<td class="data">&nbsp;</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Encoding</th>
+<td class="data">utf-8  Unicode (UTF-8)</td>
+<th class="rowheader" scope="row">&nbsp;</th>
+<td class="data">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</article>
+<article id="IDX2" aria-label="Engine/Host Information">
+<h1 class="contentitem toc">Engine/Host Information</h1>
+<table class="table" style="border-spacing: 0" aria-label="Engine/Host Information">
+<caption aria-label="Engine/Host Information"></caption>
+<colgroup><col><col></colgroup>
+<thead>
+<tr>
+<th class="c b header" colspan="2" scope="colgroup">Engine/Host Dependent Information</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="rowheader" scope="row">Data Set Page Size</th>
+<td class="data">131072</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Number of Data Set Pages</th>
+<td class="data">16</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">First Data Page</th>
+<td class="data">1</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Max Obs per Page</th>
+<td class="data">711</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Obs in First Data Page</th>
+<td class="data">692</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Number of Data Set Repairs</th>
+<td class="data">0</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Filename</th>
+<td class="data">/saswork/SAS_work469A000143B6_odaws01-euw1.oda.sas.com/SAS_work82FF000143B6_odaws01-euw1.oda.sas.com/df.sas7bdat</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Release Created</th>
+<td class="data">9.0401M7</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Host Created</th>
+<td class="data">Linux</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Inode Number</th>
+<td class="data">1610614022</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Access Permission</th>
+<td class="data">rw-r--r--</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Owner Name</th>
+<td class="data">u63869286</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">File Size</th>
+<td class="data">2MB</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">File Size (bytes)</th>
+<td class="data">2228224</td>
+</tr>
+</tbody>
+</table>
+</article>
+<article id="IDX3" aria-label="Variables">
+<h1 class="contentitem toc">Variables</h1>
+<table class="table" style="border-spacing: 0" aria-label="Variables">
+<caption aria-label="Variables"></caption>
+<colgroup><col></colgroup><colgroup><col><col><col><col><col></colgroup>
+<thead>
+<tr>
+<th class="c b header" colspan="6" scope="colgroup">Alphabetic List of Variables and Attributes</th>
+</tr>
+<tr>
+<th class="r b header" scope="col">#</th>
+<th class="b header" scope="col">Variable</th>
+<th class="b header" scope="col">Type</th>
+<th class="r b header" scope="col">Len</th>
+<th class="b header" scope="col">Format</th>
+<th class="b header" scope="col">Informat</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="r rowheader" scope="row">13</th>
+<td class="data">Android Ver</td>
+<td class="data">Char</td>
+<td class="r data">12</td>
+<td class="data">$12.</td>
+<td class="data">$12.</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">1</th>
+<td class="data">App</td>
+<td class="data">Char</td>
+<td class="r data">54</td>
+<td class="data">$54.</td>
+<td class="data">$54.</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">2</th>
+<td class="data">Category</td>
+<td class="data">Char</td>
+<td class="r data">14</td>
+<td class="data">$14.</td>
+<td class="data">$14.</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">9</th>
+<td class="data">Content Rating</td>
+<td class="data">Char</td>
+<td class="r data">8</td>
+<td class="data">$8.</td>
+<td class="data">$8.</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">12</th>
+<td class="data">Current Ver</td>
+<td class="data">Char</td>
+<td class="r data">18</td>
+<td class="data">$18.</td>
+<td class="data">$18.</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">10</th>
+<td class="data">Genres</td>
+<td class="data">Char</td>
+<td class="r data">25</td>
+<td class="data">$25.</td>
+<td class="data">$25.</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">6</th>
+<td class="data">Installs</td>
+<td class="data">Char</td>
+<td class="r data">13</td>
+<td class="data">$13.</td>
+<td class="data">$13.</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">11</th>
+<td class="data">Last Updated</td>
+<td class="data">Num</td>
+<td class="r data">8</td>
+<td class="data">DATETIME.</td>
+<td class="data">ANYDTDTM40.</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">8</th>
+<td class="data">Price</td>
+<td class="data">Num</td>
+<td class="r data">8</td>
+<td class="data">BEST12.</td>
+<td class="data">BEST32.</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">3</th>
+<td class="data">Rating</td>
+<td class="data">Num</td>
+<td class="r data">8</td>
+<td class="data">BEST12.</td>
+<td class="data">BEST32.</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">4</th>
+<td class="data">Reviews</td>
+<td class="data">Num</td>
+<td class="r data">8</td>
+<td class="data">BEST12.</td>
+<td class="data">BEST32.</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">5</th>
+<td class="data">Size</td>
+<td class="data">Char</td>
+<td class="r data">4</td>
+<td class="data">$4.</td>
+<td class="data">$4.</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">7</th>
+<td class="data">Type</td>
+<td class="data">Char</td>
+<td class="r data">4</td>
+<td class="data">$4.</td>
+<td class="data">$4.</td>
+</tr>
+</tbody>
+</table>
+</article>
+</section>
+</section>
+<section data-name="Contents" data-sec-type="proc">
+<hr class="pagebreak">
+<div id="IDX4" class="systitleandfootercontainer" style="border-spacing: 1px">
+<p><span class="c systemtitle">Number of Rows and Columns</span> </p>
+</div>
+<div class="proc_title_group">
+<p class="c proctitle">The CONTENTS Procedure</p>
+</div>
+<h1 class="contentprocname toc">The Contents Procedure</h1>
+<section>
+<h1 class="contentfolder toc">WORK.DF</h1>
+<article aria-label="Attributes">
+<h1 class="contentitem toc">Attributes</h1>
+<table class="table" style="border-spacing: 0" aria-label="Attributes">
+<caption aria-label="Attributes"></caption>
+<colgroup><col><col><col><col></colgroup>
+<tbody>
+<tr>
+<th class="rowheader" scope="row">Data Set Name</th>
+<td class="data">WORK.DF</td>
+<th class="rowheader" scope="row">Observations</th>
+<td class="data">10841</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Member Type</th>
+<td class="data">DATA</td>
+<th class="rowheader" scope="row">Variables</th>
+<td class="data">13</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Engine</th>
+<td class="data">V9</td>
+<th class="rowheader" scope="row">Indexes</th>
+<td class="data">0</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Created</th>
+<td class="data">01/05/2024 23:40:57</td>
+<th class="rowheader" scope="row">Observation Length</th>
+<td class="data">184</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Last Modified</th>
+<td class="data">01/05/2024 23:40:57</td>
+<th class="rowheader" scope="row">Deleted Observations</th>
+<td class="data">0</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Protection</th>
+<td class="data">&nbsp;</td>
+<th class="rowheader" scope="row">Compressed</th>
+<td class="data">NO</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Data Set Type</th>
+<td class="data">&nbsp;</td>
+<th class="rowheader" scope="row">Sorted</th>
+<td class="data">NO</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Label</th>
+<td class="data">&nbsp;</td>
+<th class="rowheader" scope="row">&nbsp;</th>
+<td class="data">&nbsp;</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Data Representation</th>
+<td class="data">SOLARIS_X86_64, LINUX_X86_64, ALPHA_TRU64, LINUX_IA64</td>
+<th class="rowheader" scope="row">&nbsp;</th>
+<td class="data">&nbsp;</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Encoding</th>
+<td class="data">utf-8  Unicode (UTF-8)</td>
+<th class="rowheader" scope="row">&nbsp;</th>
+<td class="data">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</article>
+<article id="IDX5" aria-label="Engine/Host Information">
+<h1 class="contentitem toc">Engine/Host Information</h1>
+<table class="table" style="border-spacing: 0" aria-label="Engine/Host Information">
+<caption aria-label="Engine/Host Information"></caption>
+<colgroup><col><col></colgroup>
+<thead>
+<tr>
+<th class="c b header" colspan="2" scope="colgroup">Engine/Host Dependent Information</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="rowheader" scope="row">Data Set Page Size</th>
+<td class="data">131072</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Number of Data Set Pages</th>
+<td class="data">16</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">First Data Page</th>
+<td class="data">1</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Max Obs per Page</th>
+<td class="data">711</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Obs in First Data Page</th>
+<td class="data">692</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Number of Data Set Repairs</th>
+<td class="data">0</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Filename</th>
+<td class="data">/saswork/SAS_work469A000143B6_odaws01-euw1.oda.sas.com/SAS_work82FF000143B6_odaws01-euw1.oda.sas.com/df.sas7bdat</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Release Created</th>
+<td class="data">9.0401M7</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Host Created</th>
+<td class="data">Linux</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Inode Number</th>
+<td class="data">1610614022</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Access Permission</th>
+<td class="data">rw-r--r--</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Owner Name</th>
+<td class="data">u63869286</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">File Size</th>
+<td class="data">2MB</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">File Size (bytes)</th>
+<td class="data">2228224</td>
+</tr>
+</tbody>
+</table>
+</article>
+<article id="IDX6" aria-label="Variables">
+<h1 class="contentitem toc">Variables</h1>
+<table class="table" style="border-spacing: 0" aria-label="Variables">
+<caption aria-label="Variables"></caption>
+<colgroup><col></colgroup><colgroup><col><col><col><col><col></colgroup>
+<thead>
+<tr>
+<th class="c b header" colspan="6" scope="colgroup">Alphabetic List of Variables and Attributes</th>
+</tr>
+<tr>
+<th class="r b header" scope="col">#</th>
+<th class="b header" scope="col">Variable</th>
+<th class="b header" scope="col">Type</th>
+<th class="r b header" scope="col">Len</th>
+<th class="b header" scope="col">Format</th>
+<th class="b header" scope="col">Informat</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="r rowheader" scope="row">13</th>
+<td class="data">Android Ver</td>
+<td class="data">Char</td>
+<td class="r data">12</td>
+<td class="data">$12.</td>
+<td class="data">$12.</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">1</th>
+<td class="data">App</td>
+<td class="data">Char</td>
+<td class="r data">54</td>
+<td class="data">$54.</td>
+<td class="data">$54.</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">2</th>
+<td class="data">Category</td>
+<td class="data">Char</td>
+<td class="r data">14</td>
+<td class="data">$14.</td>
+<td class="data">$14.</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">9</th>
+<td class="data">Content Rating</td>
+<td class="data">Char</td>
+<td class="r data">8</td>
+<td class="data">$8.</td>
+<td class="data">$8.</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">12</th>
+<td class="data">Current Ver</td>
+<td class="data">Char</td>
+<td class="r data">18</td>
+<td class="data">$18.</td>
+<td class="data">$18.</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">10</th>
+<td class="data">Genres</td>
+<td class="data">Char</td>
+<td class="r data">25</td>
+<td class="data">$25.</td>
+<td class="data">$25.</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">6</th>
+<td class="data">Installs</td>
+<td class="data">Char</td>
+<td class="r data">13</td>
+<td class="data">$13.</td>
+<td class="data">$13.</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">11</th>
+<td class="data">Last Updated</td>
+<td class="data">Num</td>
+<td class="r data">8</td>
+<td class="data">DATETIME.</td>
+<td class="data">ANYDTDTM40.</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">8</th>
+<td class="data">Price</td>
+<td class="data">Num</td>
+<td class="r data">8</td>
+<td class="data">BEST12.</td>
+<td class="data">BEST32.</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">3</th>
+<td class="data">Rating</td>
+<td class="data">Num</td>
+<td class="r data">8</td>
+<td class="data">BEST12.</td>
+<td class="data">BEST32.</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">4</th>
+<td class="data">Reviews</td>
+<td class="data">Num</td>
+<td class="r data">8</td>
+<td class="data">BEST12.</td>
+<td class="data">BEST32.</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">5</th>
+<td class="data">Size</td>
+<td class="data">Char</td>
+<td class="r data">4</td>
+<td class="data">$4.</td>
+<td class="data">$4.</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">7</th>
+<td class="data">Type</td>
+<td class="data">Char</td>
+<td class="r data">4</td>
+<td class="data">$4.</td>
+<td class="data">$4.</td>
+</tr>
+</tbody>
+</table>
+</article>
+</section>
+</section>
+<section data-name="Means" data-sec-type="proc">
+<hr class="pagebreak">
+<div id="IDX7" class="systitleandfootercontainer" style="border-spacing: 1px">
+<p><span class="c systemtitle">Number of Rows and Columns</span> </p>
+</div>
+<div class="proc_title_group">
+<p class="c proctitle">The MEANS Procedure</p>
+</div>
+<h1 class="contentprocname toc">The Means Procedure</h1>
+<article aria-label="Summary statistics">
+<h1 class="contentitem toc">Summary statistics</h1>
+<table class="table" style="border-spacing: 0" aria-label="Summary statistics">
+<caption aria-label="Summary statistics"></caption>
+<colgroup><col></colgroup><colgroup><col><col><col><col><col></colgroup>
+<thead>
+<tr>
+<th class="b header" scope="col">Variable</th>
+<th class="r b header" scope="col">N</th>
+<th class="r b header" scope="col">Mean</th>
+<th class="r b header" scope="col">Std Dev</th>
+<th class="r b header" scope="col">Minimum</th>
+<th class="r b header" scope="col">Maximum</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="data">
+<div class="stacked-cell">
+<div>Rating</div>
+<div>Reviews</div>
+<div>Price</div>
+<div>Last Updated</div>
+</div>
+</th>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">9367</div>
+<div class="r">10840</div>
+<div class="r">10040</div>
+<div class="r">10840</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">4.1933383</div>
+<div class="r">444152.90</div>
+<div class="r">0</div>
+<div class="r">1826865782</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.5374313</div>
+<div class="r">2927760.60</div>
+<div class="r">0</div>
+<div class="r">34094389.50</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">1.0000000</div>
+<div class="r">0</div>
+<div class="r">0</div>
+<div class="r">1590019200</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">19.0000000</div>
+<div class="r">78158306.00</div>
+<div class="r">0</div>
+<div class="r">1849305600</div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</article>
+</section>
+<section data-name="Univariate" data-sec-type="proc">
+<hr class="pagebreak">
+<div id="IDX8" class="systitleandfootercontainer" style="border-spacing: 1px">
+<p><span class="c systemtitle">Count of Missing Values in Each Column</span> </p>
+</div>
+<div class="proc_title_group">
+<p class="c proctitle">The UNIVARIATE Procedure</p>
+<p class="c proctitle">Variable:  Rating</p>
+</div>
+<h1 class="contentprocname toc">The Univariate Procedure</h1>
+<section>
+<h1 class="contentfolder toc">Rating</h1>
+<article aria-label="Moments">
+<h1 class="contentitem toc">Moments</h1>
+<table class="table" style="border-spacing: 0" aria-label="Moments">
+<caption aria-label="Moments"></caption>
+<colgroup><col><col><col><col></colgroup>
+<thead>
+<tr>
+<th class="c b header" colspan="4" scope="colgroup">Moments</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="rowheader" scope="row">N</th>
+<td class="r data">9367</td>
+<th class="rowheader" scope="row">Sum Weights</th>
+<td class="r data">9367</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Mean</th>
+<td class="r data">4.19333832</td>
+<th class="rowheader" scope="row">Sum Observations</th>
+<td class="r data">39279</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Std Deviation</th>
+<td class="r data">0.5374313</td>
+<th class="rowheader" scope="row">Variance</th>
+<td class="r data">0.28883241</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Skewness</th>
+<td class="r data">0.59563675</td>
+<th class="rowheader" scope="row">Kurtosis</th>
+<td class="r data">65.9947813</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Uncorrected SS</th>
+<td class="r data">167415.34</td>
+<th class="rowheader" scope="row">Corrected SS</th>
+<td class="r data">2705.20431</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Coeff Variation</th>
+<td class="r data">12.8163116</td>
+<th class="rowheader" scope="row">Std Error Mean</th>
+<td class="r data">0.00555294</td>
+</tr>
+</tbody>
+</table>
+</article>
+<article id="IDX9" aria-label="Basic Measures of Location and Variability">
+<h1 class="contentitem toc">Basic Measures of Location and Variability</h1>
+<table class="table" style="border-spacing: 0" aria-label="Basic Measures of Location and Variability">
+<caption aria-label="Basic Measures of Location and Variability"></caption>
+<colgroup><col><col><col><col></colgroup>
+<thead>
+<tr>
+<th class="c b header" colspan="4" scope="colgroup">Basic Statistical Measures</th>
+</tr>
+<tr>
+<th class="c b header" colspan="2" scope="colgroup">Location</th>
+<th class="c b header" colspan="2" scope="colgroup">Variability</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="rowheader" scope="row">Mean</th>
+<td class="r data">4.193338</td>
+<th class="rowheader" scope="row">Std Deviation</th>
+<td class="r data">0.53743</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Median</th>
+<td class="r data">4.300000</td>
+<th class="rowheader" scope="row">Variance</th>
+<td class="r data">0.28883</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Mode</th>
+<td class="r data">4.400000</td>
+<th class="rowheader" scope="row">Range</th>
+<td class="r data">18.00000</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">&nbsp;</th>
+<td class="r data">&nbsp;</td>
+<th class="rowheader" scope="row">Interquartile Range</th>
+<td class="r data">0.50000</td>
+</tr>
+</tbody>
+</table>
+</article>
+<article id="IDX10" aria-label="Tests For Location">
+<h1 class="contentitem toc">Tests For Location</h1>
+<table class="table" style="border-spacing: 0" aria-label="Tests For Location">
+<caption aria-label="Tests For Location"></caption>
+<colgroup><col><col><col><col><col></colgroup>
+<thead>
+<tr>
+<th class="c b header" colspan="5" scope="colgroup">Tests&nbsp;for&nbsp;Location:&nbsp;Mu0=0</th>
+</tr>
+<tr>
+<th class="b header" scope="col">Test</th>
+<th class="c b header" colspan="2" scope="colgroup">Statistic</th>
+<th class="c b header" colspan="2" scope="colgroup">p Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="rowheader" scope="row">Student's t</th>
+<th class="rowheader" scope="row">t</th>
+<td class="r data">755.1569</td>
+<th class="rowheader" scope="row">Pr &gt; |t|</th>
+<td class="r data">&lt;.0001</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Sign</th>
+<th class="rowheader" scope="row">M</th>
+<td class="r data">4683.5</td>
+<th class="rowheader" scope="row">Pr &gt;= |M|</th>
+<td class="r data">&lt;.0001</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Signed Rank</th>
+<th class="rowheader" scope="row">S</th>
+<td class="r data">21937514</td>
+<th class="rowheader" scope="row">Pr &gt;= |S|</th>
+<td class="r data">&lt;.0001</td>
+</tr>
+</tbody>
+</table>
+</article>
+<article id="IDX11" aria-label="Quantiles">
+<h1 class="contentitem toc">Quantiles</h1>
+<table class="table" style="border-spacing: 0" aria-label="Quantiles">
+<caption aria-label="Quantiles"></caption>
+<colgroup><col></colgroup><colgroup><col></colgroup>
+<thead>
+<tr>
+<th class="c b header" colspan="2" scope="colgroup">Quantiles&nbsp;(Definition&nbsp;5)</th>
+</tr>
+<tr>
+<th class="b header" scope="col">Level</th>
+<th class="r b header" scope="col">Quantile</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="rowheader" scope="row">100% Max</th>
+<td class="r data">19.0</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">99%</th>
+<td class="r data">5.0</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">95%</th>
+<td class="r data">4.8</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">90%</th>
+<td class="r data">4.7</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">75% Q3</th>
+<td class="r data">4.5</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">50% Median</th>
+<td class="r data">4.3</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">25% Q1</th>
+<td class="r data">4.0</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">10%</th>
+<td class="r data">3.6</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">5%</th>
+<td class="r data">3.2</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">1%</th>
+<td class="r data">2.3</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">0% Min</th>
+<td class="r data">1.0</td>
+</tr>
+</tbody>
+</table>
+</article>
+<article id="IDX12" aria-label="Extreme Observations">
+<h1 class="contentitem toc">Extreme Observations</h1>
+<table class="table" style="border-spacing: 0" aria-label="Extreme Observations">
+<caption aria-label="Extreme Observations"></caption>
+<colgroup><col><col><col><col></colgroup>
+<thead>
+<tr>
+<th class="c b header" colspan="4" scope="colgroup">Extreme Observations</th>
+</tr>
+<tr>
+<th class="c b header" colspan="2" scope="colgroup">Lowest</th>
+<th class="c b header" colspan="2" scope="colgroup">Highest</th>
+</tr>
+<tr>
+<th class="r b header" scope="col">Value</th>
+<th class="r b header" scope="col">Obs</th>
+<th class="r b header" scope="col">Value</th>
+<th class="r b header" scope="col">Obs</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="r data">1</td>
+<td class="r data">10592</td>
+<td class="r data">5</td>
+<td class="r data">10743</td>
+</tr>
+<tr>
+<td class="r data">1</td>
+<td class="r data">10401</td>
+<td class="r data">5</td>
+<td class="r data">10777</td>
+</tr>
+<tr>
+<td class="r data">1</td>
+<td class="r data">10325</td>
+<td class="r data">5</td>
+<td class="r data">10821</td>
+</tr>
+<tr>
+<td class="r data">1</td>
+<td class="r data">8876</td>
+<td class="r data">5</td>
+<td class="r data">10838</td>
+</tr>
+<tr>
+<td class="r data">1</td>
+<td class="r data">8821</td>
+<td class="r data">19</td>
+<td class="r data">10473</td>
+</tr>
+</tbody>
+</table>
+</article>
+<article id="IDX13" aria-label="Missing Values">
+<h1 class="contentitem toc">Missing Values</h1>
+<table class="table" style="border-spacing: 0" aria-label="Missing Values">
+<caption aria-label="Missing Values"></caption>
+<colgroup><col><col><col><col></colgroup>
+<thead>
+<tr>
+<th class="c b header" colspan="4" scope="colgroup">Missing Values</th>
+</tr>
+<tr>
+<th class="r b header" rowspan="2" scope="col">Missing<br>Value</th>
+<th class="r b header" rowspan="2" scope="col">Count</th>
+<th class="c b header" colspan="2" scope="colgroup">Percent Of</th>
+</tr>
+<tr>
+<th class="r b header" scope="col">All Obs</th>
+<th class="r b header" scope="col">Missing Obs</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="r data">.</td>
+<td class="r data">1474</td>
+<td class="r data">13.60</td>
+<td class="r data">100.00</td>
+</tr>
+</tbody>
+</table>
+</article>
+</section>
+</section>
+<section data-name="Print" data-sec-type="proc">
+<hr class="pagebreak">
+<div id="IDX14" class="systitleandfootercontainer" style="border-spacing: 1px">
+<p><span class="c systemtitle">Statistical Summary for Rating Column</span> </p>
+</div>
+<h1 class="contentprocname toc">The Print Procedure</h1>
+<article aria-label="Data Set WORK.RATING_STATS">
+<h1 class="contentitem toc">Data Set WORK.RATING_STATS</h1>
+<table class="table" style="border-spacing: 0" aria-label="Data Set WORK.RATING_STATS">
+<caption aria-label="Data Set WORK.RATING_STATS"></caption>
+<colgroup><col></colgroup><colgroup><col><col><col><col><col><col><col></colgroup>
+<thead>
+<tr>
+<th class="r header" scope="col">Obs</th>
+<th class="r header" scope="col">Mean</th>
+<th class="r header" scope="col">Std</th>
+<th class="r header" scope="col">Max</th>
+<th class="r header" scope="col">P75</th>
+<th class="r header" scope="col">Median</th>
+<th class="r header" scope="col">P25</th>
+<th class="r header" scope="col">Min</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="r rowheader" scope="row">1</th>
+<td class="r data">4.19334</td>
+<td class="r data">0.53743</td>
+<td class="r data">19</td>
+<td class="r data">4.5</td>
+<td class="r data">4.3</td>
+<td class="r data">4</td>
+<td class="r data">1</td>
+</tr>
+</tbody>
+</table>
+</article>
+</section>
+</div>
+
+
+<div style="all: initial !important"><template shadowrootmode="open"><div><style></style><div data-v-edb0add2=""><!----></div><style>.rel[data-v-edb0add2]{--rel: 0.038vw}.button[data-v-edb0add2]{transition:0.2s ease;cursor:pointer;user-select:none;outline:none;box-sizing:border-box;display:flex;align-items:center;justify-content:center}.primary-btn[data-v-edb0add2]{cursor:pointer;box-sizing:border-box;font-size:calc(20 * var(--rel));font-weight:400;border-radius:calc(12 * var(--rel));transition:0.2s ease;display:flex;align-items:center;justify-content:center;background:#0096f5;color:white}.primary-btn[data-v-edb0add2]:hover{background:#009cff}.primary-btn[data-v-edb0add2]:active{background:#0aa0ff}.secondary-btn[data-v-edb0add2]{cursor:pointer;box-sizing:border-box;font-size:calc(20 * var(--rel));font-weight:400;border-radius:calc(12 * var(--rel));transition:0.2s ease;display:flex;align-items:center;justify-content:center;color:var(--primary-text-color);border:1px solid var(--secondary-btn-border-color)}.rel[data-v-edb0add2]{--rel: 0.038vw}.loader[data-v-edb0add2]{display:flex;align-items:center;justify-content:center}.loader .dot-flashing[data-v-edb0add2]{position:relative;width:calc(10 * var(--rel));height:calc(10 * var(--rel));border-radius:calc(5 * var(--rel));background-color:#fff;color:#fff;animation:dot-flashing-edb0add2 .6s infinite linear alternate;animation-delay:0.3s}.loader .dot-flashing[data-v-edb0add2]::before,.loader .dot-flashing[data-v-edb0add2]::after{content:'';display:inline-block;position:absolute;top:0}.loader .dot-flashing[data-v-edb0add2]::before{left:calc(-15 * var(--rel));width:calc(10 * var(--rel));height:calc(10 * var(--rel));border-radius:calc(5 * var(--rel));background-color:#fff;color:#fff;animation:dot-flashing-edb0add2 .6s infinite alternate;animation-delay:0s}.loader .dot-flashing[data-v-edb0add2]::after{left:calc(15 * var(--rel));width:calc(10 * var(--rel));height:calc(10 * var(--rel));border-radius:calc(5 * var(--rel));background-color:#fff;color:#fff;animation:dot-flashing-edb0add2 .6s infinite alternate;animation-delay:.6s}@keyframes dot-flashing-edb0add2{0%{background-color:#fff}80%,100%{background-color:rgba(255,255,255,0.2)}}.rel[data-v-edb0add2]{--rel: 0.038vw}.app-root[data-v-edb0add2]{font-family:'Didact Gothic', sans-serif;z-index:2147483647;right:0;top:0;position:fixed;display:flex;align-items:center;justify-content:center;width:calc(780 * var(--rel));height:calc(100vh);max-width:100vw;padding:calc(30 * var(--rel));box-sizing:border-box;color:white;font-size:calc(20 * var(--rel))}.app-root .popup[data-v-edb0add2]{background:#282a30;border-radius:calc(50 * var(--rel));padding:calc(30 * var(--rel));width:100%;max-height:100%;aspect-ratio:0.649253731;display:flex;gap:calc(30 * var(--rel));flex-direction:column;align-items:center;overflow:hidden;box-sizing:border-box;background-image:url("chrome-extension://ignghjdjmgleolgiaifohmdlnbjklkij/assets/img/videodownloaderforchrome.svg");background-size:calc(750 * var(--rel));width:100%}.app-root .popup .logo img[data-v-edb0add2]{height:calc(200 * var(--rel));width:auto}.app-root .popup .main[data-v-edb0add2]{flex-grow:1;display:flex;flex-direction:column;align-items:center;padding:calc(30 * var(--rel));padding-top:0;overflow:hidden;background:#30343c;width:100%;box-sizing:border-box;border-radius:calc(25 * var(--rel))}.app-root .popup .main .pane[data-v-edb0add2]{background:#595d6a;border-radius:calc(12 * var(--rel));display:flex;align-items:center;justify-content:center}.app-root .popup .main .state[data-v-edb0add2]{display:flex;align-items:center;flex-direction:column;width:100%;box-sizing:border-box;flex-grow:1;justify-content:center}.app-root .popup .main .state .message[data-v-edb0add2]{margin-top:calc(40 * var(--rel));font-size:calc(22 * var(--rel));font-family:'Didact Gothic', sans-serif;line-height:1}.app-root .popup .main .state .message.init[data-v-edb0add2]{font-size:calc(26 * var(--rel))}.app-root .popup .main .state .primary-btn[data-v-edb0add2]{margin-top:calc(50 * var(--rel));height:calc(72 * var(--rel));width:calc(242 * var(--rel));font-weight:600}.app-root .popup .main .state .videos[data-v-edb0add2]{margin-top:calc(40 * var(--rel));display:flex;flex-direction:column;gap:calc(15 * var(--rel));width:100%;box-sizing:border-box;border-radius:calc(20 * var(--rel));max-height:calc(917 * var(--rel));overflow:auto;scroll-behavior:smooth}.app-root .popup .main .state .videos[data-v-edb0add2]::-webkit-scrollbar{width:0;height:0}.app-root .popup .main .state .videos[data-v-edb0add2]::-webkit-scrollbar-button{width:0px;height:0px}.app-root .popup .main .state .videos[data-v-edb0add2]::-webkit-scrollbar-thumb{background:var(--scroll-color);border-radius:50px}.app-root .popup .main .state .videos[data-v-edb0add2]::-webkit-scrollbar-track{background:transparent}.app-root .popup .main .state .videos[data-v-edb0add2]::-webkit-scrollbar-track:hover{background:transparent}.app-root .popup .main .state .videos[data-v-edb0add2]::-webkit-scrollbar-track:active{background:transparent}.app-root .popup .main .state .videos[data-v-edb0add2] ::-webkit-scrollbar-corner{background:transparent}.app-root .popup .main .state .videos .preview video[data-v-edb0add2]{height:calc(242 * var(--rel));width:100%}.app-root .popup .main .state .videos .video[data-v-edb0add2]{display:flex;flex-direction:column;gap:inherit;flex-shrink:0;background:#434650;padding:calc(15 * var(--rel));border-radius:calc(20 * var(--rel))}.app-root .popup .main .state .videos .video .video-info[data-v-edb0add2]{display:flex;gap:inherit;height:calc(65 * var(--rel));overflow:hidden;flex-shrink:0}.app-root .popup .main .state .videos .video .video-info .title[data-v-edb0add2]{font-size:calc(20 * var(--rel));height:100%;display:flex;align-items:center;flex-grow:1;padding:0 calc(20 * var(--rel));overflow:hidden}.app-root .popup .main .state .videos .video .video-info .title span[data-v-edb0add2]{white-space:nowrap;overflow:hidden;width:100%;text-overflow:ellipsis}.app-root .popup .main .state .videos .video .video-info .button[data-v-edb0add2]{flex-shrink:0;height:100%;aspect-ratio:1}.app-root .popup .main .state .videos .video .video-info .button svg[data-v-edb0add2]{height:40%;width:auto}.app-root .popup .main .state .videos .video .video-info .button svg path[data-v-edb0add2]{fill:#50da6d}.app-root .popup .main .state .videos .video .video-info .button[data-v-edb0add2]:hover{background:#626775}.app-root .popup .main .state .videos .video .video-info .button[data-v-edb0add2]:active{background:#6c7080}.app-root .popup .main .state.full-page[data-v-edb0add2]{justify-content:flex-start}.app-root .popup .scan-full-page[data-v-edb0add2]{width:100%;height:calc(100 * var(--rel));border-radius:calc(20 * var(--rel));font-size:calc(24 * var(--rel))}.app-root.expanded[data-v-edb0add2]{padding:0}.app-root.expanded .popup[data-v-edb0add2]{height:100%;border-radius:0}.app-root.expanded .popup .main .state .videos[data-v-edb0add2]{max-height:calc(1175 * var(--rel))}.footer[data-v-edb0add2]{background:#30333a;height:calc(95 * var(--rel));flex-shrink:0;display:flex;align-items:center;justify-content:center}.footer a[data-v-edb0add2]{width:100%;padding:calc(10 * var(--rel));display:flex;align-items:center;justify-content:center;text-decoration:none;color:white}svg[data-v-edb0add2],.icon[data-v-edb0add2]{outline:none}.slide-enter-active[data-v-edb0add2],.slide-leave-active[data-v-edb0add2]{transition:transform 0.4s ease}.slide-enter-active .app-tool-panel[data-v-edb0add2],.slide-leave-active .app-tool-panel[data-v-edb0add2]{transition:transform 0.4s ease}.slide-enter[data-v-edb0add2],.slide-leave-to[data-v-edb0add2]{transition:transform 0.2s ease;transform:translateX(100%)}.slide-enter .app-tool-panel[data-v-edb0add2],.slide-leave-to .app-tool-panel[data-v-edb0add2]{transition:transform 0.2s ease}.root-enter-active[data-v-edb0add2],.root-leave-active[data-v-edb0add2]{transition:transform 0.4s ease}.root-enter[data-v-edb0add2],.root-leave-to[data-v-edb0add2]{transition:transform 0.2s ease}
+
+</style></div></template></div></body></html>
